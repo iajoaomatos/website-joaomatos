@@ -1,0 +1,141 @@
+/* Reset & Typography */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #020205;
+  color: #ffffff;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.font-oswald {
+  font-family: 'Montserrat', sans-serif !important;
+  letter-spacing: -0.02em !important;
+}
+
+.font-mono {
+  font-family: 'Space Mono', monospace !important;
+}
+
+/* Text Glow Effect */
+.text-glow {
+  text-shadow: 0 0 35px rgba(255, 255, 255, 0.15);
+}
+
+/* Enhanced Glassmorphic Panel (from Langfuse Design System) */
+.glass-panel {
+  background: linear-gradient(165deg,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 0.02) 40%,
+      rgba(255, 255, 255, 0.00) 100%);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.3),
+    0 20px 50px -10px rgba(0, 0, 0, 0.7),
+    inset 0 0 30px rgba(255, 255, 255, 0.01);
+}
+
+/* Animated Blur Blobs System */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.35;
+  z-index: -10;
+  animation: drift 14s infinite alternate ease-in-out;
+}
+
+.blob-1 {
+  background: #10b981;
+  width: 500px;
+  height: 500px;
+  top: -10%;
+  left: -5%;
+}
+
+.blob-2 {
+  background: #db2777;
+  width: 450px;
+  height: 450px;
+  bottom: 10%;
+  right: -10%;
+  animation-delay: -7s;
+}
+
+.blob-3 {
+  background: #0ea5e9;
+  width: 350px;
+  height: 350px;
+  top: 30%;
+  left: 45%;
+  opacity: 0.2;
+  animation-delay: -3s;
+}
+
+@keyframes drift {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  100% {
+    transform: translate(40px, 60px) scale(1.1);
+  }
+}
+
+/* Conic Border Beam & CTA Button Animations (from Finex Design System) */
+@keyframes beam-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes lines-slide {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 24px 0;
+  }
+}
+
+[style*="--border-gradient"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: var(--border-radius-before, inherit);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  background: var(--border-gradient);
+  pointer-events: none;
+}
+
+/* Tech diagram laser-beams (The Intersection section) */
+@keyframes laser-flow {
+  0% {
+    stroke-dashoffset: 200;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.laser-beam {
+  stroke-dasharray: 15 85;
+  animation: laser-flow 4s linear infinite;
+}
+
+.laser-beam-down {
+  stroke-dasharray: 10 50;
+  animation: laser-flow 2.5s linear infinite;
+}

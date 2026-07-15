@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  
+  <!-- SEO & Metadata -->
+  <title>João Matos — Digital Product Portfolio Experience</title>
+  <meta name="description" content="Helping organizations build better digital products and make better digital decisions by connecting Product Thinking, Digital Analytics, and Product Marketing."/>
+  <link rel="canonical" href="https://joaomatosdigital.pt"/>
+  <link rel="icon" href="https://joaomatosdigital.pt/wp-content/uploads/2021/09/Frame-3.svg" sizes="32x32" />
+  <link rel="icon" href="https://joaomatosdigital.pt/wp-content/uploads/2021/09/Frame-3.svg" sizes="192x192" />
+  <link rel="apple-touch-icon" href="https://joaomatosdigital.pt/wp-content/uploads/2021/09/Frame-3.svg" />
+
+  <!-- OpenGraph Metadata -->
+  <meta property="og:title" content="João Matos — Digital Product Portfolio Experience"/>
+  <meta property="og:description" content="Connecting Product, Marketing, and Analytics to create measurable business outcomes."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://joaomatosdigital.pt"/>
+  <meta property="og:image" content="./assets/profile-image.png"/>
+
+  <!-- Twitter Metadata -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="João Matos — Digital Product Portfolio Experience"/>
+  <meta name="twitter:description" content="Connecting Product, Marketing, and Analytics to create measurable business outcomes."/>
+  <meta name="twitter:image" content="./assets/profile-image.png"/>
+
+  <!-- Schema Markup JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://joaomatosdigital.pt/#person",
+        "name": "João Carlos Matos",
+        "url": "https://joaomatosdigital.pt",
+        "sameAs": [
+          "https://www.linkedin.com/in/joaocarlosmatos/",
+          "https://joaomatosdigital.medium.com/"
+        ],
+        "jobTitle": "Digital Product Professional",
+        "knowsAbout": [
+          "Product Thinking",
+          "Digital Analytics",
+          "Product Marketing",
+          "User Experience Research",
+          "Digital Strategy",
+          "Conversion Rate Optimization"
+        ],
+        "description": "Helping organizations build better digital products and make better digital decisions by connecting Product Thinking, Digital Analytics, and Product Marketing."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://joaomatosdigital.pt/#website",
+        "url": "https://joaomatosdigital.pt",
+        "name": "João Matos",
+        "description": "Digital Product Portfolio Experience",
+        "publisher": {
+          "@id": "https://joaomatosdigital.pt/#person"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts Preconnect & Stylesheets -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Dynamic Tailwind Compiler & Lucide Icons CDN -->
+  <!-- Dynamic Tailwind Compiler & Secure Lucide Icons CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@0.453.0/dist/umd/lucide.min.js"></script>
+
+  <!-- Premium Custom Styling System -->
+  <link href="./assets/css/styles.css" rel="stylesheet" />
+</head>
+<body class="antialiased overflow-x-hidden selection:bg-indigo-500/30 selection:text-white bg-[#020205]">
+
+  <!-- Grainy Noise Overlay -->
+  <div class="fixed inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.12] brightness-125 contrast-125 pointer-events-none mix-blend-overlay z-40"></div>
+
+  <!-- Tech Grid Background -->
+  <div class="fixed inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:90px_90px] pointer-events-none z-0"></div>
+
+  <!-- Background Blur Blobs -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <!-- Premium Aura Overlay (Finex style) -->
+  <div class="aura-background-component -z-10 w-full top-0 absolute h-[900px] saturate-150 brightness-110 pointer-events-none" style="mask-image: linear-gradient(transparent, black 0%, black 70%, transparent); background: radial-gradient(circle at 50% 30%, rgba(79, 70, 229, 0.08) 0%, transparent 60%);"></div>
+
+  <!-- Header Navigation -->
+  <nav class="fixed w-full top-0 right-0 left-0 z-50 bg-black/60 backdrop-blur-lg border-b border-white/5 py-5 px-6 md:px-12">
+    <div class="flex w-full max-w-7xl mx-auto items-center justify-between">
+      <!-- Title / Brand -->
+      <a class="text-white font-oswald text-base font-light tracking-widest uppercase flex items-center gap-2 group" href="#">
+        JOÃO MATOS 
+        <span class="text-[9px] font-mono px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 uppercase tracking-widest transition-colors group-hover:bg-indigo-500/20">
+          PRODUCT &amp; ANALYTICS
+        </span>
+      </a>
+      
+      <!-- Nav Links (Montserrat / Space Mono upper style matching main site layout) -->
+      <div class="hidden md:flex gap-8 items-center font-mono text-[11px] tracking-widest uppercase">
+        <a class="text-white/60 hover:text-white transition-colors" href="#intersection">Sobre mim</a>
+        <a class="text-white/60 hover:text-white transition-colors" href="#journey">Experiência</a>
+        <a class="text-white/60 hover:text-white transition-colors" href="#selected-work">Casos</a>
+        <a class="text-white/60 hover:text-white transition-colors" href="#writing-learning">Blogue</a>
+      </div>
+      
+      <!-- Right CTA -->
+      <div>
+        <a class="group transition-all duration-300 hover:bg-indigo-500/10 hover:border-indigo-400 hover:shadow-[0_0_35px_rgba(99,102,241,0.5),inset_0_0_20px_rgba(99,102,241,0.3)] hover:scale-[1.02] flex items-center justify-center bg-black/60 border-indigo-500/40 border rounded-full pt-2.5 pr-6 pb-2.5 pl-6 shadow-[0_0_20px_rgba(99,102,241,0.2),inset_0_0_10px_rgba(99,102,241,0.1)]" href="mailto:jctmatos@gmail.com">
+          <span class="uppercase text-[11px] transition-colors group-hover:text-white font-semibold text-white/90 tracking-tight font-sans">LET'S TALK</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Experience Wrapper -->
+  <main class="flex flex-col min-h-screen z-10 pt-32 lg:pt-40 px-6 max-w-7xl mx-auto relative justify-center">
+    
+    <!-- Hero Section -->
+    <section id="hero" class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center py-12">
+      
+      <!-- Left Column: Copy & CTAs -->
+      <div class="lg:col-span-7 flex flex-col items-start text-left z-20">
+        
+        <!-- Supporting Indicators (Rule of Three) -->
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-white/60 text-[10px] font-mono tracking-widest uppercase flex items-center gap-1.5 shadow-sm">
+            <span class="w-1.5 h-1.5 rounded-full bg-pink-500"></span>
+            01 · Product
+          </span>
+          <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-white/60 text-[10px] font-mono tracking-widest uppercase flex items-center gap-1.5 shadow-sm">
+            <span class="w-1.5 h-1.5 rounded-full bg-sky-500"></span>
+            02 · Analytics
+          </span>
+          <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-white/60 text-[10px] font-mono tracking-widest uppercase flex items-center gap-1.5 shadow-sm">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+            03 · Better Decisions
+          </span>
+        </div>
+
+        <!-- Headline (Oswald display + text glow) -->
+        <h1 class="text-5xl md:text-7xl font-light font-oswald text-white tracking-tight leading-[1.05] text-glow mb-6">
+          Building Better <br>Digital Products. <br>
+          <span class="font-light font-oswald tracking-tight" style="color: rgb(199, 81, 192);">
+            Making Better Decisions.
+          </span>
+        </h1>
+
+        <!-- Subheadline (Clear, concise sentence for 15-second reading time) -->
+        <p class="text-lg md:text-xl text-gray-400 font-sans font-light leading-relaxed mb-8 max-w-xl">
+          Helping organizations understand user behavior, optimize flows, and grow digital products by connecting Product Thinking, Digital Analytics, and Product Marketing.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center w-full sm:w-auto">
+          <!-- Primary CTA Button (Finex beam-spin gradient look) -->
+          <button class="group inline-flex overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_40px_-10px_rgba(99,102,241,0.5)] focus:outline-none text-sm font-semibold text-white h-[54px] rounded-full pt-4 pr-8 pb-4 pl-8 relative items-center justify-center cursor-pointer" style="position: relative; --border-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2)); --border-radius-before: 9999px" onclick="window.open('https://www.linkedin.com/in/joaocarlosmatos/', '_blank')">
+            <!-- Full Border Beam Conic Animation -->
+            <div class="absolute inset-0 -z-20 rounded-full overflow-hidden p-[1px]">
+              <div class="absolute inset-[-100%] bg-[conic-gradient(from_0deg,transparent_0_300deg,#6366f1_360deg)]" style="animation: beam-spin 3s linear infinite;"></div>
+              <div class="absolute inset-[1px] rounded-full bg-[#050505]"></div>
+            </div>
+            <!-- Inner Background & Layout -->
+            <div class="overflow-hidden bg-[#0A0A0A] rounded-full absolute top-[2px] right-[2px] bottom-[2px] left-[2px]">
+              <!-- Blue-Indigo top gradient -->
+              <div class="bg-gradient-to-b from-indigo-900/20 to-transparent absolute top-0 right-0 bottom-0 left-0"></div>
+              <!-- Monotone moving lines -->
+              <div class="opacity-[0.06] mix-blend-plus-lighter absolute top-0 right-0 bottom-0 left-0" style="background-image: repeating-linear-gradient(90deg, #fff, #fff 1px, transparent 1px, transparent 8px); background-size: 24px 100%; animation: lines-slide 1.5s linear infinite;"></div>
+              <!-- Glowing backdrop -->
+              <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-2/3 h-1/2 bg-indigo-500/20 blur-2xl rounded-full pointer-events-none transition-all duration-500 group-hover:bg-indigo-500/40"></div>
+            </div>
+            <!-- Button Content -->
+            <span class="transition-colors group-hover:text-white uppercase font-bold text-white/90 tracking-tight z-10 relative font-sans">
+              Explore My Work
+            </span>
+            <svg class="lucide lucide-arrow-right relative z-10 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </button>
+
+          <!-- Secondary CTA Button (Glassmorphic) -->
+          <a href="mailto:jctmatos@gmail.com" class="hover:bg-white/10 hover:border-white/20 transition-all duration-300 inline-flex group text-sm font-semibold text-white/80 bg-white/5 border-white/10 border rounded-full h-[54px] pt-3.5 pr-8 pb-3.5 pl-8 gap-x-2 items-center justify-center cursor-pointer">
+            Let's Talk
+            <svg class="lucide lucide-send w-3.5 h-3.5 text-indigo-400 group-hover:text-white transition-colors ml-1" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="m22 2-7 20-4-9-9-4Z"></path>
+              <path d="M22 2 11 13"></path>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+      
+      <!-- Right Column: Profile Image -->
+      <div class="lg:col-span-5 flex justify-center lg:justify-end z-20">
+        <!-- Offset Tech Layout Container -->
+        <div class="relative group">
+          <!-- External Offset Tech Border -->
+          <div class="absolute -inset-4 border border-indigo-500/10 rounded-[2.8rem] pointer-events-none transition-all duration-500 group-hover:border-indigo-500/30 group-hover:-inset-2"></div>
+          
+          <!-- Outer Backglow (Halo Effect) -->
+          <div class="absolute inset-4 bg-gradient-to-tr from-indigo-500/20 to-pink-500/20 blur-[80px] rounded-full pointer-events-none opacity-80 group-hover:opacity-100 transition-opacity duration-700"></div>
+
+          <!-- Glassmorphic Profile Photo Container (Vertical 3:4 Aspect Ratio) -->
+          <div class="relative w-full max-w-[340px] sm:w-[360px] aspect-[3/4] rounded-[2.5rem] overflow-hidden glass-panel transition-all duration-700 hover:scale-[1.01] hover:shadow-[0_0_60px_rgba(99,102,241,0.25)]">
+            
+
+
+            <!-- Double Corner Accent Marks (High-Tech Theme) -->
+            <div class="absolute top-4 right-4 w-2.5 h-2.5 border-t border-r border-white/20 z-30"></div>
+            <div class="absolute bottom-4 left-4 w-2.5 h-2.5 border-b border-l border-white/20 z-30"></div>
+
+            <div class="w-full h-full p-2.5 bg-black/40 rounded-[2.5rem] relative">
+              <!-- Profile Image: Enforced Aspect Ratio & Top-Centered Alignment -->
+              <img src="./assets/profile-image.png" alt="João Matos" class="w-full h-full rounded-[2.2rem] filter saturate-[0.88] contrast-[1.03] group-hover:saturate-[1.02] transition-all duration-700 object-cover object-top z-10">
+              
+              <!-- Bottom Soft Vignette Blend Mask to blend the photo into the frame -->
+              <div class="absolute inset-x-2.5 bottom-2.5 h-1/4 bg-gradient-to-t from-[#020205]/90 via-black/30 to-transparent rounded-b-[2.2rem] z-20 pointer-events-none"></div>
+            </div>
+            
+            <!-- Inner Glass Highlight Layer -->
+            <div class="absolute inset-0 rounded-[2.5rem] border border-white/10 pointer-events-none z-30 group-hover:border-white/20 transition-colors duration-500"></div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- The Intersection Section -->
+    <section id="intersection" class="py-24 border-t border-white/5 relative z-20">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-center">
+        
+        <!-- Left Column: Vision & Copy -->
+        <div class="lg:col-span-6 flex flex-col items-start text-left">
+          <!-- Section Badge -->
+          <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-white/50 text-[10px] font-mono tracking-widest uppercase mb-6 flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-pink-500 animate-pulse"></span>
+            02 · THE INTERSECTION
+          </span>
+
+          <!-- Oswald Headline -->
+          <h2 class="text-4xl md:text-5xl font-light font-oswald text-white tracking-tight leading-[1.1] text-glow mb-6">
+            A Multidisciplinary <br>Approach to Growth.
+          </h2>
+
+          <!-- Subheadline -->
+          <h3 class="text-lg md:text-xl font-semibold text-white/90 font-sans mb-4">
+            Everything starts with understanding.
+          </h3>
+
+          <!-- Concise Copy (20s reading time) -->
+          <p class="text-base md:text-lg text-gray-400 font-sans font-light leading-relaxed mb-6">
+            By connecting user research, digital marketing, and web analytics, I help organizations see the full picture. Better understanding drives better digital decisions, leading to superior products and measurable business outcomes.
+          </p>
+
+          <p class="text-sm font-mono text-indigo-400/80 flex items-center gap-2">
+            <span>//</span> How I think and solve problems.
+          </p>
+        </div>
+
+        <!-- Right Column: Interactive CSS/SVG Node Diagram -->
+        <div class="lg:col-span-6 flex justify-center items-center">
+          <div class="relative w-full max-w-[430px] aspect-square flex items-center justify-center select-none bg-black/10 rounded-[3rem] p-4 border border-white/5">
+            
+            <!-- Outer connecting glow background circles -->
+            <div class="absolute w-[220px] h-[220px] bg-pink-500/5 rounded-full blur-[40px] pointer-events-none"></div>
+
+            <!-- SVG Laser lines connecting nodes -->
+            <svg class="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="pink-top-grad" x1="200" y1="50" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#f472b6" stop-opacity="0.8"/>
+                  <stop offset="100%" stop-color="#db2777" stop-opacity="0.2"/>
+                </linearGradient>
+                <linearGradient id="green-left-grad" x1="70" y1="280" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#34d399" stop-opacity="0.8"/>
+                  <stop offset="100%" stop-color="#10b981" stop-opacity="0.2"/>
+                </linearGradient>
+                <linearGradient id="sky-grad" x1="330" y1="280" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+                  <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0.2"/>
+                </linearGradient>
+                <linearGradient id="emerald-grad" x1="200" y1="200" x2="200" y2="350" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#10b981" stop-opacity="0.6"/>
+                  <stop offset="100%" stop-color="#059669" stop-opacity="0.9"/>
+                </linearGradient>
+              </defs>
+
+              <!-- Muted Static Grid Lines -->
+              <line x1="200" y1="48" x2="200" y2="190" stroke="rgba(255,255,255,0.06)" stroke-width="1.5" stroke-dasharray="4 4" />
+              <line x1="100" y1="280" x2="190" y2="210" stroke="rgba(255,255,255,0.06)" stroke-width="1.5" stroke-dasharray="4 4" />
+              <line x1="300" y1="280" x2="210" y2="210" stroke="rgba(255,255,255,0.06)" stroke-width="1.5" stroke-dasharray="4 4" />
+              <line x1="200" y1="210" x2="200" y2="350" stroke="rgba(255,255,255,0.06)" stroke-width="1.5" stroke-dasharray="4 4" />
+
+              <!-- Animated Laser flow streams pointing towards Better Decisions -->
+              <path d="M200,48 L200,190" stroke="url(#pink-top-grad)" stroke-width="2" class="laser-beam" />
+              <path d="M100,280 L190,210" stroke="url(#green-left-grad)" stroke-width="2" class="laser-beam" />
+              <path d="M300,280 L210,210" stroke="url(#sky-grad)" stroke-width="2" class="laser-beam" />
+
+              <!-- Animated Laser flow stream pointing from Better Decisions to Better Outcomes -->
+              <path d="M200,210 L200,350" stroke="url(#emerald-grad)" stroke-width="2.5" class="laser-beam-down" />
+            </svg>
+
+            <!-- 1. PRODUCT (Top Node) -->
+            <div class="absolute top-6 left-1/2 -translate-x-1/2 group/node transition-all duration-300 hover:scale-105 cursor-default z-30">
+              <div class="glass-panel px-4 py-2 rounded-full border border-pink-500/20 flex items-center gap-2 shadow-lg">
+                <span class="w-2 h-2 rounded-full bg-pink-400 shadow-[0_0_8px_rgba(219,39,119,0.6)]"></span>
+                <span class="text-xs font-semibold text-white/90 tracking-wide uppercase font-sans">Product</span>
+              </div>
+            </div>
+
+            <!-- 2. MARKETING (Bottom-Left Node) -->
+            <div class="absolute bottom-24 left-4 group/node transition-all duration-300 hover:scale-105 cursor-default z-30">
+              <div class="glass-panel px-4 py-2 rounded-full border border-emerald-500/20 flex items-center gap-2 shadow-lg">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(16,185,129,0.6)]"></span>
+                <span class="text-xs font-semibold text-white/90 tracking-wide uppercase font-sans">Marketing</span>
+              </div>
+            </div>
+
+            <!-- 3. ANALYTICS (Bottom-Right Node) -->
+            <div class="absolute bottom-24 right-4 group/node transition-all duration-300 hover:scale-105 cursor-default z-30">
+              <div class="glass-panel px-4 py-2 rounded-full border border-sky-500/20 flex items-center gap-2 shadow-lg">
+                <span class="w-2 h-2 rounded-full bg-sky-400 shadow-[0_0_8px_rgba(14,165,233,0.6)]"></span>
+                <span class="text-xs font-semibold text-white/90 tracking-wide uppercase font-sans">Analytics</span>
+              </div>
+            </div>
+
+            <!-- 4. BETTER DECISIONS (Central Node - Intersection Hub) -->
+            <div class="absolute top-[48%] left-1/2 -translate-x-1/2 -translate-y-1/2 group/center transition-all duration-300 hover:scale-105 cursor-default z-30">
+              <div class="relative rounded-2xl px-5 py-3.5 bg-[#07070a]/90 border border-pink-400/50 shadow-[0_0_35px_rgba(219,39,119,0.25)] flex flex-col items-center justify-center text-center">
+                <!-- Inner soft radial glow background -->
+                <div class="absolute inset-0 rounded-2xl bg-pink-500/5 pointer-events-none"></div>
+                <span class="text-[9px] font-mono text-pink-300 tracking-widest uppercase mb-1">INTERSECTION</span>
+                <span class="text-xs font-bold text-white tracking-wide uppercase font-sans">Better Decisions</span>
+              </div>
+            </div>
+
+            <!-- 5. BETTER OUTCOMES (Target Node) -->
+            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 transition-all duration-300 hover:scale-105 cursor-default z-30">
+              <div class="relative rounded-xl px-4 py-2 bg-emerald-950/20 border border-emerald-500/30 shadow-[0_0_20px_rgba(16,185,129,0.15)] flex items-center gap-2">
+                <div class="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(16,185,129,0.6)] animate-pulse"></div>
+                <span class="text-[10px] font-mono text-emerald-400 tracking-widest uppercase">Better Outcomes</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- The Journey Section -->
+    <section id="journey" class="py-24 border-t border-white/5 relative z-20">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-start">
+        
+        <!-- Left Column: Copy -->
+        <div class="lg:col-span-5 flex flex-col items-start text-left lg:sticky lg:top-32">
+          <!-- Section Badge -->
+          <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-white/50 text-[10px] font-mono tracking-widest uppercase mb-6 flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-pulse"></span>
+            03 · THE JOURNEY
+          </span>
+
+          <!-- Oswald Headline -->
+          <h2 class="text-4xl md:text-5xl font-light font-oswald text-white tracking-tight leading-[1.1] text-glow mb-6">
+            A Decade of <br>Convergence.
+          </h2>
+
+          <!-- Concise Copy -->
+          <p class="text-base md:text-lg text-gray-400 font-sans font-light leading-relaxed mb-6 max-w-sm">
+            From building digital distribution channels to designing product analytics frameworks and lecturing. A decade of shifts focused on what drives digital product success.
+          </p>
+
+          <p class="text-xs font-mono text-gray-600 uppercase tracking-widest">
+            Scroll to view progression
+          </p>
+        </div>
+
+        <!-- Right Column: Minimal Timeline -->
+        <div class="lg:col-span-7 pl-4 sm:pl-8">
+          <div class="relative border-l border-white/10 pl-8 sm:pl-12 space-y-12 py-2">
+            
+            <!-- Milestone 1 -->
+            <div class="relative group/timeline-item transition-all duration-300">
+              <!-- Glowing Dot -->
+              <div class="absolute -left-[39px] sm:-left-[55px] top-1.5 w-4 h-4 rounded-full bg-emerald-500 border-4 border-[#020205] ring-1 ring-emerald-500/20 transition-all duration-300 group-hover/timeline-item:scale-125 group-hover/timeline-item:shadow-[0_0_15px_rgba(16,185,129,0.8)] z-20"></div>
+              
+              <div class="flex flex-col">
+                <span class="text-[9px] font-mono text-emerald-400 tracking-widest uppercase mb-1">STAGE 01</span>
+                <h3 class="text-base font-bold text-white mb-1 group-hover/timeline-item:text-emerald-300 transition-colors font-sans">Digital Marketing</h3>
+                <p class="text-sm text-gray-400 font-light font-sans leading-relaxed">Acquiring users and mastering digital distribution channels.</p>
+              </div>
+            </div>
+
+            <!-- Milestone 2 -->
+            <div class="relative group/timeline-item transition-all duration-300">
+              <!-- Glowing Dot -->
+              <div class="absolute -left-[39px] sm:-left-[55px] top-1.5 w-4 h-4 rounded-full bg-pink-500 border-4 border-[#020205] ring-1 ring-pink-500/20 transition-all duration-300 group-hover/timeline-item:scale-125 group-hover/timeline-item:shadow-[0_0_15px_rgba(219,39,119,0.8)] z-20"></div>
+              
+              <div class="flex flex-col">
+                <span class="text-[9px] font-mono text-pink-400 tracking-widest uppercase mb-1">STAGE 02</span>
+                <h3 class="text-base font-bold text-white mb-1 group-hover/timeline-item:text-pink-300 transition-colors font-sans">Performance &amp; Growth</h3>
+                <p class="text-sm text-gray-400 font-light font-sans leading-relaxed">Optimizing conversion funnels, landing pages, and growth loops.</p>
+              </div>
+            </div>
+
+            <!-- Milestone 3 -->
+            <div class="relative group/timeline-item transition-all duration-300">
+              <!-- Glowing Dot -->
+              <div class="absolute -left-[39px] sm:-left-[55px] top-1.5 w-4 h-4 rounded-full bg-sky-500 border-4 border-[#020205] ring-1 ring-sky-500/20 transition-all duration-300 group-hover/timeline-item:scale-125 group-hover/timeline-item:shadow-[0_0_15px_rgba(14,165,233,0.8)] z-20"></div>
+              
+              <div class="flex flex-col">
+                <span class="text-[9px] font-mono text-sky-400 tracking-widest uppercase mb-1">STAGE 03</span>
+                <h3 class="text-base font-bold text-white mb-1 group-hover/timeline-item:text-sky-300 transition-colors font-sans">Enterprise Consulting</h3>
+                <p class="text-sm text-gray-400 font-light font-sans leading-relaxed">Advising organizations on marketing technology and system setups.</p>
+              </div>
+            </div>
+
+            <!-- Milestone 4 -->
+            <div class="relative group/timeline-item transition-all duration-300">
+              <!-- Glowing Dot -->
+              <div class="absolute -left-[39px] sm:-left-[55px] top-1.5 w-4 h-4 rounded-full bg-pink-500 border-4 border-[#020205] ring-1 ring-pink-500/20 transition-all duration-300 group-hover/timeline-item:scale-125 group-hover/timeline-item:shadow-[0_0_15px_rgba(219,39,119,0.8)] z-20"></div>
+              
+              <div class="flex flex-col">
+                <span class="text-[9px] font-mono text-pink-400 tracking-widest uppercase mb-1">STAGE 04</span>
+                <h3 class="text-base font-bold text-white mb-1 group-hover/timeline-item:text-pink-300 transition-colors font-sans">Product Thinking</h3>
+                <p class="text-sm text-gray-400 font-light font-sans leading-relaxed">Moving focus from sheer traffic to user retention and product discovery.</p>
+              </div>
+            </div>
+
+            <!-- Milestone 5 -->
+            <div class="relative group/timeline-item transition-all duration-300">
+              <!-- Glowing Dot -->
+              <div class="absolute -left-[39px] sm:-left-[55px] top-1.5 w-4 h-4 rounded-full bg-sky-500 border-4 border-[#020205] ring-1 ring-sky-500/20 transition-all duration-300 group-hover/timeline-item:scale-125 group-hover/timeline-item:shadow-[0_0_15px_rgba(14,165,233,0.8)] z-20"></div>
+              
+              <div class="flex flex-col">
+                <span class="text-[9px] font-mono text-sky-400 tracking-widest uppercase mb-1">STAGE 05</span>
+                <h3 class="text-base font-bold text-white mb-1 group-hover/timeline-item:text-sky-300 transition-colors font-sans">Digital Analytics</h3>
+                <p class="text-sm text-gray-400 font-light font-sans leading-relaxed">Establishing measurement frameworks, tracking implementation, and data-informed decisions.</p>
+              </div>
+            </div>
+
+            <!-- Milestone 6 -->
+            <div class="relative group/timeline-item transition-all duration-300">
+              <!-- Glowing Dot -->
+              <div class="absolute -left-[39px] sm:-left-[55px] top-1.5 w-4 h-4 rounded-full bg-purple-500 border-4 border-[#020205] ring-1 ring-purple-500/20 transition-all duration-300 group-hover/timeline-item:scale-125 group-hover/timeline-item:shadow-[0_0_15px_rgba(168,85,247,0.8)] z-20"></div>
+              
+              <div class="flex flex-col">
+                <span class="text-[9px] font-mono text-purple-400 tracking-widest uppercase mb-1">STAGE 06</span>
+                <h3 class="text-base font-bold text-white mb-1 group-hover/timeline-item:text-purple-300 transition-colors font-sans">Teaching &amp; Sharing</h3>
+                <p class="text-sm text-gray-400 font-light font-sans leading-relaxed">Translating practice into articles, mentoring, and educating the community.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Selected Work Section -->
+    <section id="selected-work" class="py-24 border-t border-white/5 relative z-20">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col items-center mb-16 text-center">
+        <!-- Section Badge -->
+        <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-white/50 text-[10px] font-mono tracking-widest uppercase mb-4 flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-pulse"></span>
+          04 · SELECTED WORK
+        </span>
+        <!-- Oswald Title -->
+        <h2 class="text-4xl md:text-5xl font-light font-oswald text-white tracking-tight leading-[1.1] text-glow">
+          Measurable Impact.
+        </h2>
+      </div>
+
+      <!-- 3-Column Card Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Project 1: CTT -->
+        <div class="bg-white/[0.03] border border-white/5 rounded-[2.5rem] p-8 flex flex-col justify-between hover:bg-white/[0.06] hover:border-white/10 hover:shadow-[0_0_40px_rgba(14,165,233,0.1)] hover:scale-[1.03] transition-all duration-500 group relative overflow-hidden">
+          <!-- Glow Blob -->
+          <div class="absolute top-0 right-0 w-32 h-32 bg-sky-500/10 blur-[50px] rounded-full group-hover:bg-sky-500/20 transition-all duration-500"></div>
+          
+          <div class="relative z-10">
+            <!-- Stat -->
+            <div class="text-6xl font-light font-oswald text-white tracking-tight leading-[1] text-glow mb-2 group-hover:text-sky-300 transition-colors">80%</div>
+            <!-- Subtitle -->
+            <span class="text-[10px] font-mono text-sky-400 tracking-widest uppercase mb-6 block font-bold">Analytics Ecosystem // CTT</span>
+            
+            <!-- Structured Details -->
+            <div class="space-y-4">
+              <div>
+                <div class="text-[9px] font-mono font-bold text-white/40 tracking-wider mb-1 uppercase">Challenge</div>
+                <p class="text-sm text-gray-400 font-light font-sans leading-relaxed">No end-to-end analytical visibility or integrated web/app data streams.</p>
+              </div>
+              <div>
+                <div class="text-[9px] font-mono font-bold text-white/40 tracking-wider mb-1 uppercase">Solution</div>
+                <p class="text-sm text-gray-400 font-light font-sans leading-relaxed">Rollout of automated GA4 architecture and centralized KPI dashboard reporting.</p>
+              </div>
+              <div>
+                <div class="text-[9px] font-mono font-bold text-white/40 tracking-wider mb-1 uppercase">Impact</div>
+                <p class="text-sm text-sky-300 font-semibold font-sans leading-relaxed">80% of digital products integrated, unlocking 360° insights and self-service agility.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: EY Client -->
+        <div class="bg-white/[0.03] border border-white/5 rounded-[2.5rem] p-8 flex flex-col justify-between hover:bg-white/[0.06] hover:border-white/10 hover:shadow-[0_0_40px_rgba(219,39,119,0.1)] hover:scale-[1.03] transition-all duration-500 group relative overflow-hidden">
+          <!-- Glow Blob -->
+          <div class="absolute top-0 right-0 w-32 h-32 bg-pink-500/10 blur-[50px] rounded-full group-hover:bg-pink-500/20 transition-all duration-500"></div>
+          
+          <div class="relative z-10">
+            <!-- Stat -->
+            <div class="text-6xl font-light font-oswald text-white tracking-tight leading-[1] text-glow mb-2 group-hover:text-pink-300 transition-colors">10+</div>
+            <!-- Subtitle -->
+            <span class="text-[10px] font-mono text-pink-400 tracking-widest uppercase mb-6 block font-bold">UX Research Lab // EY</span>
+            
+            <!-- Structured Details -->
+            <div class="space-y-4">
+              <div>
+                <div class="text-[9px] font-mono font-bold text-white/40 tracking-wider mb-1 uppercase">Challenge</div>
+                <p class="text-sm text-gray-400 font-light font-sans leading-relaxed">Need to redesign employee digital journeys across diverse retail formats and roles.</p>
+              </div>
+              <div>
+                <div class="text-[9px] font-mono font-bold text-white/40 tracking-wider mb-1 uppercase">Solution</div>
+                <p class="text-sm text-gray-400 font-light font-sans leading-relaxed">Establishing a dedicated UX research lab, conducting user interviews, and prototyping.</p>
+              </div>
+              <div>
+                <div class="text-[9px] font-mono font-bold text-white/40 tracking-wider mb-1 uppercase">Impact</div>
+                <p class="text-sm text-pink-300 font-semibold font-sans leading-relaxed">Mapped workflows for 10+ store formats, boosting collaboration and tool delivery.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Vendap -->
+        <div class="bg-white/[0.03] border border-white/5 rounded-[2.5rem] p-8 flex flex-col justify-between hover:bg-white/[0.06] hover:border-white/10 hover:shadow-[0_0_40px_rgba(16,185,129,0.1)] hover:scale-[1.03] transition-all duration-500 group relative overflow-hidden">
+          <!-- Glow Blob -->
+          <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 blur-[50px] rounded-full group-hover:bg-emerald-500/20 transition-all duration-500"></div>
+          
+          <div class="relative z-10">
+            <!-- Stat -->
+            <div class="text-6xl font-light font-oswald text-white tracking-tight leading-[1] text-glow mb-2 group-hover:text-emerald-300 transition-colors">€1M</div>
+            <!-- Subtitle -->
+            <span class="text-[10px] font-mono text-emerald-400 tracking-widest uppercase mb-6 block font-bold">Performance Marketing // Vendap</span>
+            
+            <!-- Structured Details -->
+            <div class="space-y-4">
+              <div>
+                <div class="text-[9px] font-mono font-bold text-white/40 tracking-wider mb-1 uppercase">Challenge</div>
+                <p class="text-sm text-gray-400 font-light font-sans leading-relaxed">Requirement to scale market share and display lead generation campaign volume.</p>
+              </div>
+              <div>
+                <div class="text-[9px] font-mono font-bold text-white/40 tracking-wider mb-1 uppercase">Solution</div>
+                <p class="text-sm text-gray-400 font-light font-sans leading-relaxed">Developing integrated campaign dashboards for data-driven budget optimization.</p>
+              </div>
+              <div>
+                <div class="text-[9px] font-mono font-bold text-white/40 tracking-wider mb-1 uppercase">Impact</div>
+                <p class="text-sm text-emerald-300 font-semibold font-sans leading-relaxed">30% revenue growth, generated over €1M in qualified sales leads.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Writing & Learning Section -->
+    <section id="writing-learning" class="py-24 border-t border-white/5 relative z-20">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-start">
+        
+        <!-- Left Column: Mindset Copy -->
+        <div class="lg:col-span-5 flex flex-col items-start text-left lg:sticky lg:top-32">
+          <!-- Section Badge -->
+          <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-white/50 text-[10px] font-mono tracking-widest uppercase mb-6 flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-pulse"></span>
+            05 · WRITING &amp; LEARNING
+          </span>
+
+          <!-- Oswald Headline -->
+          <h2 class="text-4xl md:text-5xl font-light font-oswald text-white tracking-tight leading-[1.1] text-glow mb-6">
+            Learning is <br>the Message.
+          </h2>
+
+          <!-- Mindset Copy -->
+          <p class="text-base md:text-lg text-gray-400 font-sans font-light leading-relaxed mb-6 max-w-sm">
+            Learning never stops. I regularly reflect on Product, Analytics, and Digital Experiences, using writing as a way to clarify thinking and share insights with the community.
+          </p>
+
+          <p class="text-xs font-mono text-gray-600 uppercase tracking-widest">
+            Select to read full article
+          </p>
+        </div>
+
+        <!-- Right Column: Minimal Editorial List -->
+        <div class="lg:col-span-7 divide-y divide-white/10 border-b border-white/10">
+          
+          <!-- Article 1 -->
+          <a href="https://joaomatosdigital.pt/continuous-discovery-habits-de-teresa-torres-a-ciencia-da-medicao-e-a-gestao-dos-ciclos-de-descoberta-key-points-da-leitura-dos-capitulos-11-e-12/" target="_blank" rel="noopener noreferrer" class="block py-6 transition-colors duration-300 group">
+            <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+              <div class="space-y-1">
+                <span class="text-[9px] font-mono text-pink-400/80 tracking-widest uppercase">Product Discovery</span>
+                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors font-sans leading-tight">Continuous Discovery Habits: A Ciência da Medição e a Gestão de Ciclos</h3>
+                <p class="text-xs text-gray-400 font-light font-sans leading-relaxed">Como medir o impacto real em produto e gerir ciclos dinâmicos de descoberta contínua.</p>
+              </div>
+              <div class="flex items-center gap-1 text-[10px] text-white/40 group-hover:text-pink-400 font-mono tracking-wider transition-colors shrink-0 pt-1">
+                <span>LER ARTIGO</span>
+                <svg class="lucide lucide-arrow-up-right w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                </svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- Article 2 -->
+          <a href="https://joaomatosdigital.pt/estrategia-de-produto-digital-como-transformar-contexto-em-decisoes-que-realmente-importam/" target="_blank" rel="noopener noreferrer" class="block py-6 transition-colors duration-300 group">
+            <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+              <div class="space-y-1">
+                <span class="text-[9px] font-mono text-pink-400/80 tracking-widest uppercase">Product Strategy</span>
+                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors font-sans leading-tight">Estratégia de Produto Digital: Como Transformar Contexto em Decisões</h3>
+                <p class="text-xs text-gray-400 font-light font-sans leading-relaxed">Como passar do contexto às decisões de produto com JTBD, North Star e alinhamento.</p>
+              </div>
+              <div class="flex items-center gap-1 text-[10px] text-white/40 group-hover:text-pink-400 font-mono tracking-wider transition-colors shrink-0 pt-1">
+                <span>LER ARTIGO</span>
+                <svg class="lucide lucide-arrow-up-right w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                </svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- Article 3 -->
+          <a href="https://joaomatosdigital.pt/google-tag-gateway-abordagem-holistica-e-com-exemplo/" target="_blank" rel="noopener noreferrer" class="block py-6 transition-colors duration-300 group">
+            <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+              <div class="space-y-1">
+                <span class="text-[9px] font-mono text-sky-400/80 tracking-widest uppercase">Digital Measurement</span>
+                <h3 class="text-base font-bold text-white group-hover:text-sky-300 transition-colors font-sans leading-tight">Google Tag Gateway: Abordagem Holística e Prática</h3>
+                <p class="text-xs text-gray-400 font-light font-sans leading-relaxed">O que é, como funciona e por que melhora a recolha de dados e atribuição no GA4.</p>
+              </div>
+              <div class="flex items-center gap-1 text-[10px] text-white/40 group-hover:text-sky-400 font-mono tracking-wider transition-colors shrink-0 pt-1">
+                <span>LER ARTIGO</span>
+                <svg class="lucide lucide-arrow-up-right w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                </svg>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Outbound Action CTAs -->
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-16">
+        <!-- Primary CTA: Explore More Articles -->
+        <button class="w-full sm:w-auto bg-sky-500 hover:bg-sky-400 text-black shadow-[0_0_20px_rgba(14,165,233,0.3)] hover:shadow-[0_0_35px_rgba(14,165,233,0.6)] hover:scale-[1.02] transition-all duration-300 flex group text-sm font-bold rounded-full h-[54px] pt-3.5 pr-8 pb-3.5 pl-8 gap-x-2 items-center justify-center cursor-pointer" onclick="window.open('https://joaomatosdigital.pt/blog/', '_blank')">
+          Explore More Articles
+          <svg class="lucide lucide-arrow-up-right w-4 h-4 text-black transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 ml-1" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+          </svg>
+        </button>
+        <!-- Secondary CTA: Read in English -->
+        <button class="w-full sm:w-auto bg-white/5 hover:bg-white/10 text-white border-white/20 hover:border-white/40 shadow-lg hover:shadow-[0_0_25px_rgba(255,255,255,0.15)] hover:scale-[1.02] transition-all duration-300 flex group text-sm font-semibold rounded-full h-[54px] pt-3.5 pr-8 pb-3.5 pl-8 gap-x-2 items-center justify-center cursor-pointer" onclick="window.open('https://joaomatosdigital.medium.com/', '_blank')">
+          Read in English
+          <svg class="lucide lucide-external-link w-3.5 h-3.5 text-white/55 group-hover:text-white transition-colors ml-1" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </button>
+      </div>
+
+    </section>
+
+    <!-- Let's Talk Section -->
+    <section id="lets-talk" class="py-24 border-t border-white/5 relative z-20">
+      <!-- Glassmorphism Square Box with Rounded Corners -->
+      <div class="max-w-4xl mx-auto glass-panel rounded-[3rem] p-12 md:p-16 text-center flex flex-col items-center relative overflow-hidden group">
+        <!-- Inner glow blobs for the glass panel -->
+        <div class="absolute -top-24 -left-24 w-64 h-64 bg-indigo-500/10 blur-[80px] rounded-full group-hover:bg-indigo-500/15 transition-all duration-700 pointer-events-none"></div>
+        <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-pink-500/10 blur-[80px] rounded-full group-hover:bg-pink-500/15 transition-all duration-700 pointer-events-none"></div>
+
+        <!-- Section Badge -->
+        <span class="px-2.5 py-1 rounded bg-white/5 border border-white/10 text-white/50 text-[10px] font-mono tracking-widest uppercase mb-6 flex items-center gap-1.5 z-10">
+          <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-pulse"></span>
+          06 · LET'S TALK
+        </span>
+
+        <!-- Oswald Headline -->
+        <h2 class="text-4xl md:text-5xl font-light font-oswald text-white tracking-tight leading-[1.1] text-glow mb-6 z-10">
+          The best ideas start <br>with a conversation.
+        </h2>
+
+        <!-- Mindset Copy -->
+        <p class="text-base md:text-lg text-gray-400 font-sans font-light leading-relaxed mb-10 max-w-xl z-10">
+          Whether it's Product, Analytics, or simply exchanging ideas, I'm always happy to connect with curious people. If anything you've read resonates with you, let's connect.
+        </p>
+
+        <!-- Primary CTA Anchor (Finex dynamic hover glow) -->
+        <a href="mailto:jctmatos@gmail.com" class="hover:bg-indigo-500/10 hover:border-indigo-400 hover:shadow-[0_0_35px_rgba(99,102,241,0.5),inset_0_0_20px_rgba(99,102,241,0.3)] hover:scale-[1.02] transition-all duration-300 inline-flex group text-sm font-semibold text-white bg-black/60 border-indigo-500/40 border rounded-full h-[54px] pt-3.5 pr-8 pb-3.5 pl-8 gap-x-2 items-center justify-center cursor-pointer shadow-[0_0_20px_rgba(99,102,241,0.2),inset_0_0_10px_rgba(99,102,241,0.1)] mb-4 z-10">
+          Get in Touch
+          <svg class="lucide lucide-send w-3.5 h-3.5 text-indigo-400 group-hover:text-white transition-colors ml-1" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="m22 2-7 20-4-9-9-4Z"></path>
+            <path d="M22 2 11 13"></path>
+          </svg>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Full-Width Footer -->
+  <footer class="w-full border-t border-white/5 bg-[#020205] py-8 px-6 md:px-12 relative z-20">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4 max-w-7xl mx-auto text-xs text-gray-500 font-sans">
+      <div class="text-center md:text-left space-y-1">
+        <p>© 2026 João Carlos Matos – All rights reserved.</p>
+        <p>
+          <a href="https://joaomatosdigital.pt/politica-de-privacidade/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Política de Privacidade</a> 
+          e 
+          <a href="https://joaomatosdigital.pt/politica-de-privacidade/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Política de Cookies</a>
+        </p>
+      </div>
+      <div class="flex items-center gap-4 text-xs font-mono uppercase tracking-widest">
+        <a href="https://www.linkedin.com/in/joaocarlosmatos/" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition-colors">LinkedIn</a>
+        <span>/</span>
+        <a href="https://joaomatosdigital.medium.com" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition-colors">Medium</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Initialize Lucide script for basic dynamic loading if needed -->
+  <script>
+    if (window.lucide) {
+      window.lucide.createIcons();
+    }
+  </script>
+</body>
+</html>
