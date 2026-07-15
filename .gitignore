@@ -1,0 +1,21 @@
+# Documents & Workspace Configuration
+docs/
+DOCUMENTO*
+
+# Design System Templates (Decoupled static builds)
+finex-finance-saas.aura.build/
+open-source-llm-10.aura.build/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Gemini / IDE cache directories
+.gemini/
+.agents/
+.system_generated/
+walkthrough.md
+task.md
+implementation_plan.md
+review_notes.md
+final_polish_review.md
