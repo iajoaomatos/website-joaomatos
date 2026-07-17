@@ -1,4 +1,4 @@
-# João Matos — Digital Product Portfolio Experience
+# João Carlos Matos — Digital Product Marketing & Analytics Experience
 
 Este repositório contém a experiência digital de portefólio profissional de **João Matos**, desenhada como uma extensão de alta performance e visualmente premium do seu site principal [joaomatosdigital.pt](https://joaomatosdigital.pt).
 
